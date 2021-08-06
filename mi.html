@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="fav.jpeg" type="image/jpeg"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--imggallery-->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>NIFA  WEBSITE</title>
+    <style>
+      .n{
+        font-weight: bold; 
+      }
+      .h{
+        font-size: 35px;
+        font-weight: 300;
+        font-family: Verdana, sans-serif;
+        padding-top: 30px;
+}
+      
+ .grid-1{
+  display:grid; 
+  grid-template-columns: 20% 80% ;
+  margin-top: 30px;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(255, 253, 253);
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: rgb(0, 0, 0);
+          font-size: 0.9rem;
+          text-align: center;
+          padding: 7px 13px;
+          text-decoration: none;
+        }
+        li a:hover{
+          border-bottom: 1px solid purple;
+          border-top: 1px solid purple;
+          color:purple;
+        }
+        
+        dt{
+          font-weight: 300;
+          font-size: 13px;
+        }
+        
+                
+        .m{
+            background-color: #000000;
+            position: absolute;
+            right:0;
+        }
+        .r{
+            background-color: black;
+            position: absolute;
+            left:0;
+        }
+        .s{
+            position: relative;
+        }
+        .fl{
+          align-self: right;
+        }
+        
+        .container
+        {
+           max-width:  1000px;
+           margin: 0 auto;
+           overflow: auto;
+        }
+        .button {
+  background-color: #79308b; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        .button4 {border-radius: 32px;
+          padding: 10px 24px;}
+.flex-container {
+     display: flex;
+     align-items: left;
+    justify-content: space-between;
+  
+}
+.q{
+  font-size: 35px;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid; 
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 60px;
+
+}
+.grid-container1{
+  display: grid; 
+  grid-template-columns: auto auto ;
+  column-gap: 50px;
+}
+
+
+  .grid-item {
+    text-align:left;
+    padding: 10px;
+}
+.cm{
+  margin: 0 auto;
+}
+.card{
+  transition: transform 0.2s ease-in ;
+}
+.card:hover{
+  transform: translateY(-15px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.lm{
+  color:#79308b; 
+}
+.flex a{
+  text-decoration: none;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.bg{
+          position: relative; 
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .bg::before{
+          content: "";
+          background-image: url('photo2.png');
+          background-size: cover;
+          background-attachment: fixed;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          opacity: 0.75;
+          color:white;
+        }
+        .b{
+          position:absolute;
+          top: 70px;
+          right: 40px;
+          bottom: 0px;
+          left: 40px;
+          font-size: 20px;
+        }
+        .t{
+           display:flex;
+           z-index: 100;
+        }
+        .flex-item-left {
+         flex: 60%;
+         padding:20px;
+         font-size: 10px;
+        }
+        .flex-item-right {
+        
+          flex:40%;
+        }
+        .bg1{
+          position: relative; 
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .bg1::before{
+          content: "";
+          background-image: url('d.png');
+          background-size: cover;
+          background-attachment: fixed;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          opacity: 0.8;
+        }
+        .b1{
+          position:absolute;
+          top: 70px;
+          right: 40px;
+          bottom: 0px;
+          left: 40px;
+          font-size: 20px;
+        }
+        .bgm{
+          position: relative; 
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .bgm::before{
+          content: "";
+          background-image: url('photo2.png');
+          background-size: cover;
+          background-attachment: fixed;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          opacity: 0.75;
+          color:white;
+        }
+        .bm{
+          position:absolute;
+          top: 70px;
+          right: 40px;
+          bottom: 0px;
+          left: 40px;
+          font-size: 20px;
+        }
+        .tm{
+           display:flex;
+           z-index: 100;
+        }
+        
+        .o{
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 20px;
+        }
+        .gr{
+          background-image: linear-gradient(to right, rgb(119, 36, 119), rgb(253, 124, 232));
+          color: white;
+          height: 50px;
+        }
+        @media(min-width:500px){
+          #nifa{
+            display:none;
+          }
+          .dropdown{
+            display:none;
+          }
+          .bgm{
+            display: none;
+          }
+        }
+        @media(max-width:500px){
+          .gr{
+            height: 170px;
+          }
+          .flex{
+            display:block;
+            text-align: center;
+          }
+          .flex .aa{
+            display: block;
+          }
+          #nifa{
+            display: block;
+            margin:auto;
+          }
+          #ni{
+            display: none;
+          }
+          .d{
+            display: none;
+          }
+          .bg1{
+            display: none;
+          }
+          .tm{
+            display: block;
+            width:100%;
+          }
+          footer .flex-container{
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: center;
+          }
+          .grid-1{
+            display: block;
+          }
+          .bg{
+            display:none;
+          }
+          
+        }
+      
+
+        </style>
+      
+</head>
+
+
+     <!--Navlink-->
+     <div class="gr">
+    <div class="container">
+     <div class="flex "> 
+     <h6 style="padding-top:1rem;"> Welcome to the National Institute of Fine Arts</h6>
+     <div>
+        <a href="#" class="fa-solid fa-phone" target="_blank">918839061603</a>   
+        <a  href="deepalisahu223@gmail.com" class="fa-solid fa-envelope">info@nifafineart.com</a>
+        <span class="aa">
+        <a  href="https://instagram.com/deepalis_27?igshid=eln29497vchw"  class="fa fa-instagram "  ></a>
+        <a href="https://wa.me/918839061603" class="fa fa-whatsapp" target="_blank"></a>
+        <a href="#" class="fa fa-facebook" target="_blank"></a>
+        <a href="#" class="fa fa-twitter" target="_blank"></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    
+   <img  id="nifa" src="download.png" alt="" style="height: 65px; width: 125px; margin-right: 75px;">
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Home
+    </button>
+    <ul class="dropdown-menu pb-5" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item w-100" href="#">Home</a></li>
+      <li><a class="dropdown-item w-100" href="#">About</a></li>
+      <li><a class="dropdown-item w-100" href="#">Courses</a></li>
+      <li><a class="dropdown-item w-100" href="#">Activities</a></li>
+      <li><a class="dropdown-item w-100" href="#">Art Gallery</a></li>
+      <li><a class="dropdown-item w-100" href="#">Franchise</a></li>
+      <li><a class="dropdown-item w-100" href="#">Contact</a></li>
+      <li><a class="dropdown-item w-100" href="#">Online classes </a></li>
+      <li><a class="dropdown-item w-100" href="#">Vedios</a></li>
+    </ul>
+  </div>
+   
+   <!--navbar-->
+    <div class="container">
+        <ul class="d">
+         <li> <img id="ni" src="download.png" alt="" style="height: 65px; width: 125px; margin-right: 75px;"></li>
+          <li class="mt-3"><a class="active" href="#home">Home</a></li>
+          <li class="mt-3"><a href="#About">About</a></li>
+          <li class="mt-3"><a href="#Courses">Courses</a></li>
+          <li class="mt-3"><a href="#Activities">Activities</a></li>
+          <li class="mt-3"><a href="#Admission">Admission</a></li>
+          <li class="mt-3"><a href="#Art Gallery">Art Gallery</a></li>
+          <li class="mt-3"><a href="#Online Classes">Online Classes</a></li>
+          <li class="mt-3"><a href="#Videos">Videos</a></li>
+          <li class="mt-3"><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+       <!--Carousel-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active s" data-bs-interval="4000">
+              <img src="1 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item s" data-bs-interval="4000">
+              <img src="2 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item s" data-bs-interval="4000">
+              <img src="3 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item s" data-bs-interval="4000">
+              <img src="4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item s" data-bs-interval="4000">
+              <img src="5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon r" ></span>
+           <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon m" ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--updates-->
+        <div class="container">
+     <div class="grid-1 mb-5">
+        <h5 class="mi">Nifa Updates::</h5>
+        <div class="lm"><marquee >
+          All NIFA courses are now available worldwide through our Live and Interactive Online classes page to register for a complimentary trial class.
+        </marquee>
+      </div>
+      </div>
+    <div class="text-center">
+      <h class="h mt-5 pt-5" >Welcome To National Institute of Fine Arts</h>
+    </div>
+  <p class="p mt-3">National Institute of Fine Arts (NIFA) is a national center for education in arts, fostering the excellence of emerging and established artists and advancing art to create a more human world. National Institute of Fine Arts  (NIFA) was established by MRS RENU KHERA in Delhi and NCR of Delhi on July 2005. Institute established another unit in Panna (M.P) which is affiliated to Raja Mansingh Music and Arts University (Gwalior). Its aim is to provide education and training to students on a wide spectrum of Fine Arts.</p>
+  <p class="p mt-3">
+    National Institute of Fine Arts is a place where the creative expression of individuals is nurtured and a sense of community flourishes. We seek to shape the global future of arts with an emphasis on excellence that allows its members to reach for the highest artistic standards as individuals while recognizing that the Art is one of the foundations of a healthy and creative society. This is a place where national and international leaders in the arts gather, teach, show and perform their work. The institute prides itself on its openness and on creating an environment that is safe, welcoming, and built on mutual respect.</p>
+    </div>
+    <div class=" text-center mt-3">
+    <p class="n">National Institute of Fine Arts is a place where the creative expression of individuals is nurtured and a sense of community flourishes.
+      </p>
+    </div>
+      <div>
+    <div class="text-center">  
+        <button class="button button4 mb-5 pt-3">Read More</button>
+    </div>
+    </div>
+ </div>
+<!--bg1-->
+<div class="bg">
+  <div class="b "> 
+    <div class="t ">
+      <div class="flex-item-left  ">
+      <h2 style="font-size: 30px; color: white;">Online Classes</h2>
+      <p  style="font-size: 14px;color: white;">Dear Students/Parents, Nifa presents its Learning App for your regular art practice in which we have added 
+          many amazing features Like: Step-by-step recorded demo videos prepared by your faculty members. Regular assessment of your
+          practise through assignment section. Live class section from same app. Attendance, payment invoice, art news, announcements,
+          important information and direct connect with the management team are some more features. So hurry up n join now to experience 
+          personalised coaching by experts sitting at your home.
+          We wish u Happy Learning. Stay Safe n Healthy.</p>
+          <button class="btn btn-primary btn-medium ">Read More</button>
+          <h4  class="mt-4 mb-3" style="color: white;">Download the App</h4>
+          <a href="https://play.google.com/store/apps"><img src="gplay.png" alt="" style="width:125px;height:42px;"></a>
+          <a href="https://www.apple.com/in/store"><img src="appstore.png" alt="" style="width:125px;height:42px;"></a>
+         
+    </div>
+    <div class="flex-item-right ">
+       <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+       </iframe>
+    </div>
+  </div>
+  </div>
+</div>
+<!--bg1 mobile-->
+<div class="bgm">
+  <div class="bm "> 
+    <div class="tm ">
+      <div>
+      <h2 style="font-size: 16px; color: white;">Online Classes</h2>
+      <p  style="font-size: 10px;color: white;">Dear Students/Parents, Nifa presents its Learning App for your regular art practice in which we have added 
+          many amazing features Like: Step-by-step recorded demo videos prepared by your faculty members. Regular assessment of your
+          practise through assignment section. Live class section from same app. Attendance, payment invoice, art news, announcements,
+          important information and direct connect with the management team are some more features. So hurry up n join now to experience 
+          personalised coaching by experts sitting at your home.
+          We wish u Happy Learning. Stay Safe n Healthy.</p>
+          <button class="btn btn-primary btn-medium ">Read More</button>
+          <a href="https://www.apple.com/in/store"><img src="appstore.png" alt="" style="width:125px;height:42px;"></a>
+         
+    </div>
+    <div  >
+       <iframe width="215" height="160"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+       </iframe>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+       <!--cards-->
+      <div class="container">
+        <div class="text-lg-center text-md-center text-sm-center q pt-4 mb-5">Students Work</div>
+       <div class="card-group pt-4 mt-3">
+        <div class="card m-2">
+          <img src="animation-sketching.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title h6 mb-4">6 Months Diploma in Sketching & Oil Painting - Regular/Part time</h5>
+            <button type="button" class="btn btn-primary ">Know More</button>
+          
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="3mchc.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title h6 mb-4">1 to 3 Months Certificate Hobby Course (Regular and Weekend)</h5>
+            <button type="button" class="btn btn-primary ">Know More</button>
+            
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="1ydfa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title h6 mb-4">One Year Diploma in Fine Arts-Regular/Part Time-Level-3</h5>
+            <button type="button" class="btn btn-primary ">Know More</button>
+            
+          </div>
+          
+        </div>
+        <div class="card m-2">
+          <img src="2ydfa.jpg" class="card-img-top" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title h6 mb-4">Two years Advance Diploma in Fine Arts - Regular/Part time</h5>
+            <button type="button" class="btn btn-primary ">Know More</button> 
+            
+          </div>
+          
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-group">
+         <div class="card m-2">
+           <img src="entrance-prepration.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Entrance Preparation For N.I.D</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+            
+           </div>
+         </div>
+         <div class="card m-2">
+           <img src="bfa.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Entrance Preparation For N.I.D</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+             
+           </div>
+         </div>
+         <div class="card m-2">
+           <img src="ma.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">M.A in Painting from UGC Recognised University</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+             
+           </div>
+           
+         </div >
+         <div class="card m-2">
+           <img src="entrance-prepration3.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Entrance preparation for B.F.A</h5>
+            
+             <button type="button" class="btn btn-primary">Know More</button>
+           </div>
+           
+         </div>
+         </div>
+       </div>
+       <div class="container">
+        <div class="card-group">
+         <div class="card m-2">
+           <img src="kidl1.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Kids 1 year Diploma (Level-1)</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+            
+           </div>
+         </div>
+         <div class="card m-2">
+           <img src="kidl2.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Kids 1 year Diploma (Level-2)</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+             
+           </div>
+         </div>
+         <div class="card m-2">
+           <img src="entrance-prepration3.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">Entrance Preparation for NIFT</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+             
+           </div>
+           
+         </div>
+         <div class="card m-2">
+           <img src="hccfk.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title h6 mb-4">3 Months Hobby Certificate Course For Kids</h5>
+             <button type="button" class="btn btn-primary">Know More</button>
+             
+           </div>
+           
+         </div>
+         </div>
+       </div>
+       <!--artgallary-->
+       <section class="gallery min-vh-100">
+        <div class="container-lg">
+          <h2 class="text-center mb-4">Student Work</h2>
+           <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="col">
+                 <img src="img/1.jpg" class="gallery-item" alt="gallery">
+              </div>
+              <div class="col">
+                 <img src="img/2.jpg" class="gallery-item" alt="gallery">
+              </div>
+              <div class="col">
+                 <img src="img/3.jpg" class="gallery-item" alt="gallery">
+              </div>
+              <div class="col">
+                 <img src="img/4.jpg" class="gallery-item" alt="gallery">
+              </div>
+              <div class="col">
+                 <img src="img/5.jpg" class="gallery-item" alt="gallery">
+              </div>
+              <div class="col">
+                 <img src="img/6.jpg" class="gallery-item" alt="gallery">
+              </div>
+           </div>
+        </div>
+     </section>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <img src="img/1.jpg" class="modal-img" alt="modal img">
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+
+
+       <!--bg2-->
+<div class="bg1 pt-5">
+  <div class="b1 "> 
+    <h2 style="font-size: 25px; color: white; " class="text-center">Student Testimonials</h2>
+    <div class="o p-4 ">
+       <iframe width="250" height="160"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+       </iframe>
+       <iframe width="250" height="160"
+       src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+       <iframe width="250" height="160"
+           src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+      <iframe width="250" height="160"
+           src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+      <iframe width="250" height="160"
+           src="https://www.youtube.com/embed/tgbNymZ7vqY">
+     </iframe>
+     <iframe width="250" height="160"
+           src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+      
+   
+  </div>
+  </div>
+</div>
+
+  <!--footer--> 
+  <footer>
+    <div  class="flex-container container pt-5">
+      <div>
+        <h6>Company</h6>
+       <dl>
+         <dt>About</dt>
+         <dt>Facilities</dt>
+         <dt>Career</dt>
+         <dt>Contact Us</dt>
+         <dt>Terms & Conditions</dt>
+         <dt>Refund Policy</dt>
+       </dl>
+   </div>
+   
+
+   <div>
+     <h6>Activities</h6>
+   <dl>
+<dt>Workshops</dt>
+<dt>Outdoor Activities</dt>
+<dt>Media Coverage</dt>
+<dt>Art Events</dt>
+<dt>Exhibition</dt>
+<dt>Daily Activities</dt>
+</dl>
+</div>
+<div>
+<h6>Popular Course</h6>
+<dt>Diploma In Fine Arts</dt>
+<dt>Certificate Hobby Course</dt>
+<dt>Entrance Preparation</dt>
+<dt>BFA</dt>
+<dt>Animation Sketching</dt>
+<dt>Kids Diploma</dt>
+</div>  
+<div>    <h6>Art Gallery</h6>
+<dt>Work By Kids Level-1</dt>
+<dt>Work By Kids Level-2</dt>
+<dt>Sketching</dt>
+<dt>Painting By Student Level-3</dt>
+
+</div>
+
+      </div>
+      <div class="container pt-5">
+        <div class="flex-container">
+          <div >
+            <h4>Connect With Us</h4>
+            <p>9810130552, 9555112200</p>
+            <p>info@nifafinearts.com</p>
+          </div>
+          <div class="fl pb-2">
+             <h4>Download the App</h4>
+             <a href="https://play.google.com/store/apps"><img src="gplay.png" alt="" style="width:125px;height:42px;"></a>
+             <a href="https://www.apple.com/in/store"><img src="appstore.png" alt="" style="width:125px;height:42px;"></a>
+            
+             <p class="text-end">© Copyright 2021 NIFA Fine Arts. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+  
+    </footer>   
+       
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </body>
+       
+     
+
+</html>
